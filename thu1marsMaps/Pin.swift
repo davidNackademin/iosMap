@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import MapKit
+
+class Pin : NSObject, MKAnnotation {
+    var coordinate: CLLocationCoordinate2D
+    var title: String?
+    
+    init(coordinate: CLLocationCoordinate2D) {
+        self.coordinate = coordinate
+        title = "varit här"
+    }
+    
+    
+}
+
